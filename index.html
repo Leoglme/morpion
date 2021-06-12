@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Samsung Campus | Colle Morpion</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="https://campus.samsung.fr/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Morpion</h1>
+      <div id="currentPlayer">Joueur ??</div>
+    </header>
+
+    <div id="grid">
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <span class="win-display">Joueur ?? a gagné !</span>
+    </div>
+
+    <div class="controls">
+      <div class="scores">
+        <div>
+          <span>Joueur 1</span>
+          <span id="playerOne">0</span>
+        </div>
+        <div>
+          <span>Joueur 2</span>
+          <span id="playerTwo">0</span>
+        </div>
+      </div>
+
+      <button type="button" id="replay">Rejouer</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/morpion.js" defer></script>
+  </body>
+</html>
